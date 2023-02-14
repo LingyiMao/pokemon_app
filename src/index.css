@@ -1,0 +1,60 @@
+body,
+html {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Navbar {
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
+
+.pokemon-buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 30%;
+}
+
+.pokemon-button {
+  padding: 1rem 0;
+  border: none;
+}
+
+.pokemon-button:hover {
+  background-color: cornflowerblue;
+}
+
+.cards-active {
+  display: none;
+}
+
+.cards {
+  display: block;
+  width: 70%;
+  text-align: center;
+}
+
+.pokemon-detail__cards {
+}
+
+.pokemon-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-info p {
+  padding: 0 1rem;
+}
