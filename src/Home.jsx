@@ -69,6 +69,7 @@ const Home = () => {
             type={singlePokemon.types[0].type.name}
             height={singlePokemon.height}
             weight={singlePokemon.weight}
+            ability={singlePokemon.abilities[0].ability.name}
             key={singlePokemon.id}
           />
         </div>

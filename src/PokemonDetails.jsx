@@ -1,4 +1,4 @@
-const PokemonDetails = ({ name, image, type, height, weight }) => {
+const PokemonDetails = ({ name, image, type, height, weight, ability }) => {
   return (
     <div className="pokemon-detail__cards">
       <img src={image} alt="pokemon-images" />
@@ -14,6 +14,10 @@ const PokemonDetails = ({ name, image, type, height, weight }) => {
       <div className="pokemon-info">
         <h3>Weight: </h3>
         <p>{weight}</p>
+      </div>
+      <div className="pokemon-info">
+        <h3>Ability: </h3>
+        <p>{ability}</p>
       </div>
     </div>
   );

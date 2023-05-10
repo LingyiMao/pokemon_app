@@ -1,6 +1,6 @@
-body,
-html {
+body {
   margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -9,14 +9,30 @@ html {
 }
 
 .Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border-bottom: 1px black solid;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgb(71, 162, 227);
+}
+
+.pokemonImage {
+  width: 100px;
+  padding: 0 0.5rem;
+}
+
+.pokemonBall {
+  padding: 0 0.5rem;
+  width: 50px;
 }
 
 .content {
   display: flex;
   justify-content: flex-end;
-  padding-top: 2rem;
 }
 
 .pokemon-buttons {
@@ -25,15 +41,23 @@ html {
   position: absolute;
   left: 0;
   width: 30%;
+  height: 800px;
+  overflow: scroll;
+
 }
 
 .pokemon-button {
   padding: 1rem 0;
   border: none;
+  background-color: rgb(246, 129, 129);
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .pokemon-button:hover {
+  cursor: pointer;
   background-color: cornflowerblue;
+  color: wheat;
 }
 
 .cards-active {
@@ -44,9 +68,22 @@ html {
   display: block;
   width: 70%;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .pokemon-detail__cards {
+  padding-top: 2rem;
+  box-shadow: 10px 15px 20px rgb(169, 168, 168);
+  width: 70%;
+  margin: auto;
+}
+
+.pokemon-detail__cards img{
+  width: 350px;
+}
+
+.pokemon-detail__cards h1 {
+  text-transform: uppercase;
 }
 
 .pokemon-info {
